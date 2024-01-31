@@ -11,3 +11,69 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+.App{
+  display: flex;
+  flex-direction: column;
+
+}
+.block {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: rgba(255, 255, 255, 0.5);
+  padding: 20px;
+}
+.Products{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.CardOfProducts{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 20px;
+  margin-top: 50px;
+}
+.ProductCart{
+  padding: 40px;
+  flex-grow: 1;
+  flex-basis: 16%;
+  width: 300px;
+}
+.categoryButton:hover {
+  background-color: hsl(60, 4%, 80%);
+}
+.categoryButtonSelected:hover {
+  background-color: #d69635;
+}
+.categoryButton{
+  cursor: pointer;
+  margin: 5px;
+  padding: 5px;
+}
+nav{
+  background: #cfd8dc;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 15px;
+}
+.link{
+  padding: 10px 40px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: black;
+}
+.cart{
+  display: flex;
+  flex: 1;
+  justify-content: flex-end;
+}
+.imgCart{
+  align-self: flex-end;
+}
+.Filters{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
