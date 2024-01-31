@@ -1,3 +1,3 @@
 # in progress....
-⭐ Deployed at: (<https://peppy-raindrop-eb31cc.netlify.app/>)
+⭐ Deployed at: (<https://stationery-shop-redux.netlify.app/>)
 I have made this project to learn Redux React by building applications
