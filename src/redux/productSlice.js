@@ -17,7 +17,7 @@ import { createSlice } from '@reduxjs/toolkit'
 export const productSlice = createSlice({
     name: "ourProducts",
     initialState: {
-        selectedCategory: "PAPER"
+        selectedCategory: "ALL"
     },
     reducers: {
         filterCategory: (state, action) =>{

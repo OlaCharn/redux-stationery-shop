@@ -7,30 +7,53 @@ import {
   BrowserRouter as Router,
   Routes,
   Route,
-  Link
+  Link,
+
 } from "react-router-dom";
 import Contacts from './Components/Contacts';
-
+import { useEffect  } from 'react';
 import { useSelector } from 'react-redux';
 import iconBag from "./assets/icons8-shopping-bag-50.png" 
 import AboutProduct from './Components/ProductComponents/AboutProduct';
+import Footer from './Components/Footer';
+import gsap from 'gsap';
+import delivery from "./assets/icons8-delivery-50.png"
 
 
 
 
 function App() {
   const totalItems = useSelector((state) => state.cart.totalItems);
+
+  useEffect(() => {
+    // Анимация подрагивания
+    const tl = gsap.timeline({ repeat: -1, yoyo: true, duration: 0.2 });
+    tl.to('.imgCart', { x: 5 });
+
+    gsap.from('.Delivery', { x: -400, duration: 5, ease: 'power2.inOut', repeat: -1, repeatDelay: 2 });
+  }, []); // Запускаем анимации при монтировании компонента
+
+
+  
+
+
+  
   return (
     <div className="App">
+      <div className='FreeShipping' > 
+      <span >FREE SHIPPING ON 40€</span>
+      <img src={delivery} alt="old" width="20px" className='Delivery'/>
+
+      </div>
+
       <Router>
 
         <nav  >
-          <Link to="/" className='link' >Shop</Link>
-          <Link to="/contacts" className='link' >CONTACTS</Link>
-          <div className='link cart' >FREE SHIPPING ON 40€ </div>
+          <Link to="/" className='link linkHover ' >Shop</Link>
+          <Link to="/contacts" className='link linkHover' >CONTACTS</Link>
           <Link to="/cart" className='link cart' > 
           <img className="imgCart" src={iconBag} alt="old" width="35px" />   
-          <div> { totalItems > 0 && `${totalItems}` }</div>           
+          <div className='ringCart'> { totalItems > 0 && `${totalItems}` }</div>           
           </Link>
         </nav>
 
@@ -45,6 +68,7 @@ function App() {
 
 
       </Router>
+      <Footer />
     </div>
   );
 }

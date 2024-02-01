@@ -5,6 +5,7 @@ import { removeItemFromCart, updateCartItemQuantity  } from "../../redux/cartSli
 import data from "../../data/data"
 import ChangeQuantity from "../Cart/ChangeQuantity";
 import { Link } from "react-router-dom";
+import "./cart.css"
 
 
 
@@ -20,20 +21,20 @@ const Cartitem = ( {cartItem} ) =>{
         };
 
     return(
-        <div>
-            <p> {products.name} </p>
+        <div className="item">
             <Link to={`/about/${products.title}`} >
 
-            <img src={products.img} alt="old" width="200px" height="270px"  />
+            <img src={products.img} alt="old" width="80px" height="120px"  />
             </Link>
+            <p className="NameProduct"> {products.name} </p>
+            <p className="NameProduct" > {products.format} </p>
 
-            <p> {cartItem.quantity} items </p>
             <ChangeQuantity
                     quantity={cartItem.quantity}
                     setQuantity={handleQuantityChange}
                     cartItemId={cartItem.id} // Передаем cartItemId в ChangeQuantity
             />
-            <p> Price: {products.price * cartItem.quantity} </p>
+            <p className="NameProduct">{products.price * cartItem.quantity}€ </p>
             <span onClick={()=>dispatch(removeItemFromCart( {cartItemId: cartItem.id} ))} >
             <img className="icon" alt="old" src="https://img.icons8.com/material-outlined/48/000000/trash--v1.png"/> 
             </span>

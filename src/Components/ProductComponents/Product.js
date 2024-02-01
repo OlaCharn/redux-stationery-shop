@@ -14,7 +14,7 @@ const Product = ( {product} ) =>{
     const dispatch = useDispatch();
 
     return(
-        <div >
+        <div className="ProductsAll">
         <div className="ProductCart">
             <Link to={`/about/${product.title}`} >
             <img src={product.img} alt="old" width="200px" height="270px"  />
@@ -23,7 +23,7 @@ const Product = ( {product} ) =>{
             <p> Price: {product.price}€ </p>
             <ChangeQuantity quantity={quantity} setQuantity={setQuantity} />
             {/* не забыть dispatch и import addItemToCart  */}
-            <button onClick={ () => {dispatch(addItemToCart({product, quantity}))} } >ADD TO CART</button>
+            <button className="linkHoverCheckout" onClick={ () => {dispatch(addItemToCart({product, quantity}))} } >ADD TO CART</button>
         </div>
         </div>
     )

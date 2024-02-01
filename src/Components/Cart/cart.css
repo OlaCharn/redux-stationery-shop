@@ -1,0 +1,62 @@
+.item{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 20px;
+    border: 1px solid #f6f4f2;
+    margin:10px;
+}
+.icon{
+    width: 20px;
+    align-self: flex-end;
+}
+.NameProduct{
+    width: 250px;
+    margin: 20px;
+}
+.Total{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin: 10px;
+    padding: 20px;
+
+}
+.Checkout{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin: 10px;
+    padding: 20px;
+}
+.linkHoverCheckout{
+    padding: 10px 40px;
+
+
+}
+.linkHoverCheckout:hover {
+    background-color: #f6f4f2;
+    color: #014532;
+    border-radius: 10px;
+    cursor: pointer;
+    border: 1px solid #014532;
+
+    }
+.CheckoutContinue{
+    margin-right: 40px;
+    background-color: #f6f4f2;
+    color: #014532;
+    border: 1px solid #014532;
+    padding: 10px 40px;
+    text-transform: uppercase;
+
+
+}
+.CheckoutContinue:hover{
+    background-color: #014532;
+    color: white;
+    cursor: pointer;
+}
+

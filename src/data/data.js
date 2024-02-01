@@ -188,7 +188,7 @@ const data = [
         description: "Odorless, non-bleed, acid-free ink",
         format: "Flexible brush tip + smooth fine tip",
         brand: "Tombow",
-        type: "MARKERS"
+        type: "ILLUSTRATION"
 
     },
     {
@@ -201,7 +201,7 @@ const data = [
         description: "Odorless, non-bleed, acid-free ink",
         format: "Flexible brush tip + smooth fine tip",
         brand: "Tombow",
-        type: "MARKERS"
+        type: "ILLUSTRATION"
 
     },
     {
@@ -214,7 +214,7 @@ const data = [
         description: "Odorless, non-bleed, acid-free ink",
         format: "Flexible brush tip + smooth fine tip",
         brand: "Tombow",
-        type: "MARKERS"
+        type: "ILLUSTRATION"
 
     },
     {
@@ -227,7 +227,7 @@ const data = [
         description: "Odorless, non-bleed, acid-free ink",
         format: "Flexible brush tip + smooth fine tip",
         brand: "Tombow",
-        type: "MARKERS"
+        type: "ILLUSTRATION"
 
     },
 

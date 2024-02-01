@@ -5,7 +5,16 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background: url("../src/assets/background.png");
+  background-repeat: no-repeat;
+  background-position: top right;
+  
+  
 }
+p, h2,h3, button{
+  font-family: 'Raleway', sans-serif;
+}
+
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
@@ -33,36 +42,60 @@ code {
   flex-wrap: wrap;
   padding: 20px;
   margin-top: 50px;
+  
 }
 .ProductCart{
   padding: 40px;
   flex-grow: 1;
   flex-basis: 16%;
   width: 300px;
+  border: 1px solid #f6f4f2;
+  margin: 10px;
 }
 .categoryButton:hover {
-  background-color: hsl(60, 4%, 80%);
+  background-color: #f6f4f2;
+  border-radius: 10px;
+
 }
 .categoryButtonSelected:hover {
-  background-color: #d69635;
+  background-color: #014532;
+  color: white;
+  border-radius: 10px;
+
 }
 .categoryButton{
   cursor: pointer;
   margin: 5px;
   padding: 5px;
+  padding: 10px 40px;
+
 }
 nav{
-  background: #cfd8dc;
+  background: rgba(255, 255, 255, 0.596);
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
   padding: 15px;
 }
+.Shop{
+  font-family: 'Allura', cursive;
+  color: #014532;
+  font-size: 100px;
+  text-shadow: 1px 1px #f6f4f2 ;
+}
 .link{
   padding: 10px 40px;
   text-decoration: none;
   text-transform: uppercase;
-  color: black;
+  color: #014532;
+  font-family: 'Raleway', sans-serif;
+
+}
+.linkHover:hover {
+  background-color: #014532;
+  color: white;
+  border-radius: 10px;
+
 }
 .cart{
   display: flex;
@@ -76,4 +109,37 @@ nav{
   display: flex;
   flex-direction: row;
   justify-content: center;
+}
+.FreeShipping{
+  background-color: #f6f4f2;
+  color: #014532;
+  font-family: 'Raleway', sans-serif;
+}
+button{
+  background-color: #014532;
+  color: white;
+  padding:10px;
+  border: none;
+  border-radius: 10px;
+  margin-top: 20px;
+}
+button:hover{
+  background-color: #014532;
+  color: white;
+  cursor: pointer;
+}
+.ChangeQuantity{
+  background-color: #f6f4f2;
+  color: #014532;
+  border: 1px solid #014532;
+}
+.ringCart{
+  background-color: #014532;
+  color: #f6f4f2;
+  height: 25px;
+  width: 25px;
+  border-radius: 50%;
+}
+.Delivery{
+  margin-right: 20px;
 }
