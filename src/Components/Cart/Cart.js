@@ -39,7 +39,7 @@ const Cart = () =>{
                 <h3  >Total Items: {totalItems} </h3>
                 <h2 >Subtotal: {totalPrice}€ </h2>
                 <h2  >Shipping: {totalPrice > 40 ? "Free" : "7€"} </h2>
-                <h2 >TOTAL: {totalPrice > 40 ? totalPrice : totalPrice+7}€ </h2>
+                <h2 >TOTAL:  {totalPrice !== 0 ? (totalPrice > 40 ? totalPrice : totalPrice + 7) : 0}€ </h2>
             </div>
             <div className="Checkout">
                 <button className="CheckoutContinue" onClick={()=> navigate(-1)} >continue shopping</button>
