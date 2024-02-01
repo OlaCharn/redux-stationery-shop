@@ -23,9 +23,10 @@ const ChangeQuantity = ( {quantity, setQuantity, cartItemId} ) =>{
 
     return(
         <div>
-            <button className='ChangeQuantity' onClick={addQuantity}> + </button>
-            <span> {quantity} </span>
             <button className='ChangeQuantity' onClick={removeQuantity} > - </button>
+            <span> {quantity} </span>
+            <button className='ChangeQuantity' onClick={addQuantity}> + </button>
+
         </div>
     )
 }
