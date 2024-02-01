@@ -43,7 +43,7 @@ const Cart = () =>{
             </div>
             <div className="Checkout">
                 <button className="CheckoutContinue" onClick={()=> navigate(-1)} >continue shopping</button>
-                <button className=' linkHoverCheckout' onClick={checkout} >CHECKOUT</button>
+                <button className=' linkHoverCheckout' onClick={() => (totalPrice !== 0 && checkout())} >CHECKOUT</button>
             </div>
 
         </div>
