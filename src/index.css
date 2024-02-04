@@ -48,7 +48,7 @@ code {
   padding: 40px;
   flex-grow: 1;
   flex-basis: 16%;
-  width: 300px;
+  width: 260px;
   border: 1px solid #f6f4f2;
   margin: 10px;
 }
@@ -76,6 +76,7 @@ nav{
   justify-content: space-around;
   flex-wrap: wrap;
   padding: 15px;
+  align-items: center;
 }
 .Shop{
   font-family: 'Allura', cursive;
@@ -142,4 +143,11 @@ button:hover{
 }
 .Delivery{
   margin-right: 20px;
+}
+@media all and (max-width:420px){
+  .categoryButton{
+    padding: 10px 15px;
+  
+  }
+  
 }

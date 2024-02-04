@@ -27,7 +27,7 @@ const AboutProduct = ({product}) =>{
                         <div className="imgAndButton">
                         <button className="ButtonGoBack linkHoverCheckout " onClick={()=> navigate(-1)} >Go Back</button>
 
-                        <img src={item.img} alt="old" width="400px" />
+                        <img src={item.img} alt="old" width="300px" />
                         </div>
                         <div className="ProductDescription">
                             <h2> {item.name} </h2>
